@@ -18,6 +18,8 @@ export const getChain = (req, res) => {
   res.json(blockchain.chain);
 };
 
+
+
 export const getTransactionPool = (req, res) => {
   res.json(transactionPool.getAll());
 };
@@ -88,5 +90,11 @@ export const mineBlock = async (req, res) => {
     }
   }
 };
+
+export const getTransactions = (req, res) => {
+  const transactions = transactionPool.getAll();
+  res.json(transactions);
+};
+
 
   
