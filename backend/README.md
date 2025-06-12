@@ -1,5 +1,11 @@
 installation
 
+create .env
+
+PORT=5000
+JWT_SECRET=
+MONGO_URI=
+
 npm install
 
 node 1
@@ -20,3 +26,6 @@ JWT-auth för att skapa/lista transaktioner
 MongoDB: sparar block, transaktioner och användare
 
 WebSocket-synkning mellan noder
+
+
+
